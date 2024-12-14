@@ -1,0 +1,32 @@
+Tailwind Setup:
+
+1. Install Node js
+
+2. check whether it is installed -> cmd: type "node"
+
+3. Open vscode: create a folder
+
+4. Open terminal: npm init -y
+
+5. npm install tailwindcss
+
+6. create src folder and public folder
+
+	6.1 In src folder, create styles.css file
+
+	6.2 In public folder, create index.html
+
+7. In src styles.css file, copy 
+			       	"@tailwind base;
+				 @tailwind components;
+				 @tailwind utilities;"
+
+8. In package.json file, in scripts section - "build-css": "tailwindcss build src/styles.css -o public/styles.css" 
+
+9. Now in cmd, npm run build-css. Now in public folder styles.css is created.
+
+10. Now in cmd, type "npx tailwindcss init"
+
+11. tailwindcss.config.js is created. In that file, in module section, type "./public/index.html"
+
+12. In cmd, type "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"

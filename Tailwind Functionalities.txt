@@ -1,0 +1,97 @@
+FONT AND TEXT
+
+text-gray-600
+text-red-200 
+
+font-bold uppercase
+font-italic uppercase
+font-semibold lowercase
+
+text-sm
+text-xl
+text-6xl
+
+
+PADDING, MARGIN, BORDER
+
+px-2 : left and right side 2 rem 
+py-4 : top and bottom side 2 rem 
+pt : padding top
+pb : padding bottom
+pl : padding left
+pr : padding right
+
+mx : margin left and right
+my : margin top and bottom 
+mt : margin top
+mb : margin bottom
+ml : margin left
+mr : margin right
+
+border-b : border bottom
+border-t : border top
+border-l : border left
+border-r : border right
+
+border-gray-200 : border color
+
+
+BACKGROUND COLOR
+
+bg-gray-200
+
+
+TAILWIND CONFIG
+
+cmd : npx tailwindcss init --full
+We can add or edit default functionalities in the tailwind css (Net Ninja : Tutorial #5)
+For each additional functionality other than editing in HTML page we need to run "npm run build-css"
+
+
+CUSTOM FONTS
+
+font-serif
+font-mono
+font-sans
+
+
+FLEXBOX
+
+flex justify-end
+flex justify-around
+flex justify-center
+flex items-end justify-center
+
+<div class="flex items-center justify-center">
+                <div class = "bg-red-500 h-4 w-6"></div>
+                <div class = "bg-blue-500 h-8 w-6"></div>
+                <div class = "bg-green-500 h-12 w-6"></div>
+</div>
+
+
+RESPONSIVE CLASSES
+
+class = "text-green-500 sm:text-red-500 lg:text-blue-500"
+big screen blue 
+medium screen red
+small screen green
+
+text-sm md:text-xl lg:text-4xl
+big screen 4xl 
+medium screen xl
+small screen small
+
+APPLY DIRECTIVE
+.anyname
+{
+    @apply classes;
+}
+.badge{
+    @apply bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
+Then use class = "badge" in html file
+
+GRID
+grid 
+grid-cols-1 : 1 column
+grid-cols-4 : 4 columns
